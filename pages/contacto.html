@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOS MATIENZOS</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header>
+
+        <h1>LOS MATIENZOS</h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li class="menu__item">
+                <a href="../index.html">Inicio</a>
+            </li>
+            <li class="menu__item">
+                <a href="./productos.html">Productos</a>
+            </li>
+            <li class="menu__item">
+                <a href="./sobre-nosotros.html">Sobre nosotros</a>
+            </li class="menu__item">
+            <li class="menu__item">
+                <a href="./curar-tu-mate.html">Como curar tu mate?</a>
+            </li>
+            <li class="menu__item active">
+                <a href="./contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <form class="contacto">    
+        <h2 class="contacto__titulo">Para mas informacion, dejanos tu consulta aca</h2>
+        <div>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre">
+        </div>
+        <div>
+            <label for="IG">Instagram</label>
+            <input type="text" id="IG">
+        </div>
+        <div>
+            <label for="Motivo de consulta">Motivo de consulta</label>
+            <select id="Motivo de consulta">
+                <option value="Problemas con mi mate">Problemas con mi mate</option>
+                <option value="Mi termo vino fallado">Mi termo vino fallado</option>
+                <option value="No venden la yerba que uso">No venden la yerba que uso</option>
+                <option value="Otra consulta">Otra consulta</option>
+            </select>
+        </div>
+        <div>
+            <label for="Explicanos el motivo de tu consulta">Explicanos el motivo de tu consulta</label>
+            <textarea id="Explicanos" name="Explicanos el motivo de tu consulta" width="100%"></textarea>
+        </div>
+        <div id="terminos">
+        <label for="terminos">Desea subscribirse a nuestras ofertas?</label>
+        <input type="radio" name="terminos" value="1">
+        <label>Si</label>
+        <input type="radio" name="terminos" value="0">
+        <label>No</label>
+        </div>
+        <div>
+            <input type="submit" value="Enviar consulta">
+            <input type="reset" value="Reiniciar consulta">
+        </div>
+    </form>
+    <footer>
+        <div>
+            <h4 class="redes_titulo">Te esperamos!</h4>
+            </div>
+            <div class="lista">
+            <ul class="redes__lista">    
+            <li>
+                <a href="https://www.instagram.com" target="_blank" > <img class="redes__icono" src="../imgs/instagram-xxl.ico" alt="instagram"></a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com" target="_blank"> <img class="redes__icono" src="../imgs/tiktok-xxl.ico" alt="tiktok"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com" target="_blank"> <img class="redes__icono" src="../imgs/facebook-3-xxl (1).ico" alt="facebook"></a>
+            </li>
+            <li>
+                <a href="https://www.web.whatsapp.com" target="_blank"> <img class="redes__icono" src="../imgs/whatsapp-xxl.ico" alt="whatsapp"></a>
+            </li>
+            </ul>
+            </div>
+    </footer>
+</body>
+</html>

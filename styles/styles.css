@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,300;0,400;0,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+body{
+    background-color: rgba(36, 122, 93, 0.945);
+    color:azure;
+    max-width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "head"
+    "menu"
+    "principal"
+    "redes";
+}
+/*Titulo*/
+
+header{
+    grid-area: head;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #f0ffff;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0); 
+    background-image: url(https://tienda.cabrales.com/media/wysiwyg/infortis/cabrales/banner_yerba_mate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+}
+
+/*Menu*/
+.menu{
+    height: 3rem;
+    grid-area: menu;
+    list-style-type: none;
+    background-color:rgba(86, 212, 134, 0.719);
+    color:azure;
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+}
+
+.menu__item{
+    font-size: 30px;
+    margin-left: 40px; 
+}
+
+.menu__item a{
+    color: azure;
+    text-decoration: solid;
+}
+
+.menu__item.active a,
+.menu__item a:hover {
+    text-decoration: underline solid;
+}
+
+
+/*Home*/
+
+.home{
+    grid-area: principal;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2 fr;
+    grid-template-rows: 2 fr;
+    grid-template-areas:
+    "parrafo foto"
+    "mapa foto";
+}
+
+.home__parrafo{
+    grid-area: parrafo;
+    padding: 1em 1em 1em 1em;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.home__imagen{
+    grid-area: foto;
+    border-style: solid;
+    color: white;
+    background-color: rgba(86, 212, 134, 0.719);
+    border-width: 3px;
+    width: 100%;
+}
+
+.home__ubi{
+    grid-area: mapa;
+    width: 100%;
+    height: 100%;
+}
+
+/*footer*/
+
+footer{
+    grid-area: redes;
+    bottom: 0;
+    background-color: rgba(86, 212, 134, 0.719);
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+    padding-bottom: 1rem;
+    font-size: 25px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.redes_titulo{
+    text-align: center;
+}
+
+.redes__icono{
+    height: 40px;
+    padding-top: 10px;
+}
+
+.redes__lista{
+    list-style-type: none;
+}
+
+li{
+    text-align: center;
+    display: inline-block;
+}
+
+/*Productos*/   
+
+.productos{
+    grid-area: principal;
+    height: 77vh;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row; 
+    justify-content: space-evenly;
+
+}
+
+.productos__imagen{
+    border-radius: 20%;
+    height: 200px;
+    text-align:center;
+    transition: transform .3s;
+}
+
+.productos__imagen:hover{
+    transform: scale(1.5); 
+}
+
+.productos__descripcion{
+    text-align: center;
+}
+
+.productos__subtitulo{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+
+/*SobreNosotros*/
+
+.sobreNosotros{
+    grid-area: principal;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+.sobreNosotros__parrafo{
+    line-height: 40px;
+    text-align: justify;
+    margin: 10px;
+}
+
+.sobreNosotros__titulo{
+    text-align: center;
+    text-decoration: underline double 3px;
+    font-size: 25px;
+}
+/*ComocurartuMate*/
+
+.comocurartuMate{
+    grid-area: principal;
+    padding-top: 30px;
+    height: 70vh;
+    text-align: center;
+    text-decoration: underline double 3px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Contacto*/
+
+.contacto{
+    grid-area: principal;
+    height: 70vh;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.contacto__titulo{
+    text-align: center;
+    text-decoration: underline double 3px;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .menu{
+        width: 100%;
+        height: 100%;
+        padding-inline: 50px;
+        display: flex;
+    }
+
+    .home{
+        grid-template-columns: 1 fr;
+        grid-template-rows: 3 fr;
+        grid-template-areas:
+        "parrafo"
+        "mapa" 
+        "foto";
+    }
+
+    .productos{
+        height: auto;
+        margin: 20px 0px 5px 0px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+
+    .redes__icono{
+        height: 40px;
+        padding-top: 15px;
+        gap: 10px;
+    }
+
+    .comocurartuMate{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .videos{
+        width: 450px;
+    }
+}

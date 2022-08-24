@@ -6,33 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOS MATIENZOS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" sizes="192x192" href="./imgs/mate.ico">
 </head>
 
 <body>
     <header>
-        <h1>LOS MATIENZOS</h1>
+        <h1 class="display-2 text-dark">LOS MATIENZOS</h1>
     </header>
-    <nav class="menu">
-        <ul>
-            <li class="menu__item">
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li class="menu__item active">
-                <a href="./productos.html">Productos</a>
-            </li>
-            <li class="menu__item">
-                <a href="./sobre-nosotros.html">Sobre nosotros</a>
-            </li class="menu__item">
-            <li class="menu__item">
-                <a href="./curar-tu-mate.html">Como curar tu mate?</a>
-            </li>
-            <li class="menu__item">
-                <a href="./contacto.html">Contacto</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg">
+        <div class="container-fluid" id="barranav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./productos.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./productos.html">Mates</a></li>
+                            <li><a class="dropdown-item" href="./productos.html">Bombillas</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./productos.html">Yerberas</a></li>
+                            <li><a class="dropdown-item" href="./productos.html">Termos</a></li>
+                            <li><a class="dropdown-item" href="./productos.html">Materas</a></li>
+                            <li><a class="dropdown-item" href="./productos.html">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/sobre-nosotros.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/curar-tu-mate.html">Como curar tu mate?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <div class="productos">
+    <div class="productos container">
         <div>
             <img class="productos__imagen" src="../imgs/mates.jpg" alt="Mates">
             <h4 class="productos__descripcion">Mates</h4>
@@ -49,34 +75,43 @@
         </div>
         <div><img class="productos__imagen" src="../imgs/materas.jpg" alt="Matera">
             <h4 class="productos__descripcion">Materas</h4>
-        
-        <h4 class="productos__descripcion"></h4></div>
+
+            <h4 class="productos__descripcion"></h4>
+        </div>
         <div><img class="productos__imagen" src="../imgs/accesorios.jpg" alt="Accesorios">
             <h4 class="productos__descripcion">Accesorios</h4>
         </div>
-        <h4 class="productos__subtitulo">En caso de querer un producto fuera de la lista, no dudes de consultarnos en nuestras redes</h4>
-       </div>
+        <h4 class="productos__subtitulo">En caso de querer un producto fuera de la lista, no dudes de consultarnos en
+            nuestras redes</h4>
+    </div>
     <footer>
         <div>
             <h3 class="redes_titulo">Te esperamos!</h3>
-            </div>
-            <div class="lista">
-            <ul class="redes__lista">    
-            <li>
-                <a href="https://www.instagram.com" target="_blank" > <img class="redes__icono" src="../imgs/instagram-xxl.ico" alt="instagram"></a>
-            </li>
-            <li>
-                <a href="https://www.tiktok.com" target="_blank"> <img class="redes__icono" src="../imgs/tiktok-xxl.ico" alt="tiktok"></a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com" target="_blank"> <img class="redes__icono" src="../imgs/facebook-3-xxl (1).ico" alt="facebook"></a>
-            </li>
-            <li>
-                <a href="https://www.web.whatsapp.com" target="_blank"> <img class="redes__icono" src="../imgs/whatsapp-xxl.ico" alt="whatsapp"></a>
-            </li>
+        </div>
+        <div class="lista">
+            <ul class="redes__lista">
+                <li>
+                    <a href="https://www.instagram.com" target="_blank"> <img class="redes__icono"
+                            src="../imgs/instagram-xxl.ico" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com" target="_blank"> <img class="redes__icono"
+                            src="../imgs/tiktok-xxl.ico" alt="tiktok"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank"> <img class="redes__icono"
+                            src="../imgs/facebook-3-xxl (1).ico" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.web.whatsapp.com" target="_blank"> <img class="redes__icono"
+                            src="../imgs/whatsapp-xxl.ico" alt="whatsapp"></a>
+                </li>
             </ul>
-            </div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

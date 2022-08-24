@@ -6,38 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOS MATIENZOS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body>
     <header>
-
-        <h1>LOS MATIENZOS</h1>
+        <h1 class="display-2 text-dark">LOS MATIENZOS</h1>
     </header>
-    <nav class="menu">
-        <ul>
-            <li class="menu__item">
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li class="menu__item">
-                <a href="./productos.html">Productos</a>
-            </li>
-            <li class="menu__item active">
-                <a href="./sobre-nosotros.html">Sobre nosotros</a>
-            </li class="menu__item">
-            <li class="menu__item">
-                <a href="./curar-tu-mate.html">Como curar tu mate?</a>
-            </li>
-            <li class="menu__item">
-                <a href="./contacto.html">Contacto</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg">
+        <div class="container-fluid" id="barranav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./productos.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./productos.html">Mates</a></li>
+                            <li><a class="dropdown-item" href="./productos.html">Bombillas</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./productos.html">Yerberas</a></li>
+                            <li><a class="dropdown-item" href="./productos.html">Termos</a></li>
+                            <li><a class="dropdown-item" href="./productos.html">Materas</a></li>
+                            <li><a class="dropdown-item" href="./productos.html">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./curar-tu-mate.html">Como curar tu mate?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <section>
-        <article class="sobreNosotros">
-            <div  class="sobreNosotros__parrafo">
+        <article class="sobreNosotros container">
+            <div class="sobreNosotros__parrafo">
                 <h1 class="sobreNosotros__titulo">Nuestro origen</h1>
-                <p class="sobreNosotros__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi est voluptate totam repellat
+                <p class="sobreNosotros__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+                    est voluptate totam repellat
                     beatae quos veritatis, eaque quidem minima natus rerum nobis officiis dolores animi alias, numquam
                     amet nostrum aut!
                     Autem libero eaque quam quod eligendi officiis necessitatibus sit nostrum quibusdam nam earum
@@ -58,7 +83,7 @@
                     mollitia sapiente amet repellendus nam exercitationem tempore consectetur quibusdam, culpa ipsam
                     dolor fuga, similique molestias quae.</p>
             </div>
-            <div  class="sobreNosotros__parrafo">
+            <div class="sobreNosotros__parrafo">
                 <h1 class="sobreNosotros__titulo">El origen del mate</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugit porro minus ducimus nostrum et
                     rerum molestiae. Totam dolorem officiis consectetur ad labore sint dolore recusandae impedit, fugit
@@ -69,7 +94,9 @@
                     Temporibus, quo ad perspiciatis quam veritatis earum vitae laboriosam aut accusamus et soluta culpa
                     nulla non omnis est minus vel enim inventore voluptatem fuga quibusdam sapiente expedita facere.
                     Molestias, non!</p>
-                <a class="sobreNosotros__titulo" href="https://es.wikipedia.org/wiki/Mate_(infusi%C3%B3n)" target="_blank" title="Mate_(infusión)">Para ver la definición de Wikipedia, click aquí</a>
+                <a class="sobreNosotros__titulo d-flex justify-content-center"
+                    href="https://es.wikipedia.org/wiki/Mate_(infusi%C3%B3n)" target="_blank"
+                    title="Mate_(infusión)">Para ver la definición de Wikipedia, click aquí</a>
             </div>
         </article>
     </section>
@@ -98,10 +125,9 @@
             </ul>
         </div>
     </footer>
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

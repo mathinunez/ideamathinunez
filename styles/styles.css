@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image: url(/imgs/fondo.jpg);
+    background-image: url(./imgs/fondo.jpg);
     color:rgba(15, 16, 16, 0.896);
     max-width: 100%;
     height: 100vh;

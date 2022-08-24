@@ -57,6 +57,7 @@ footer{
     grid-area: redes;
     bottom: 0;
     padding-bottom: 1rem;
+    padding-left: 100px;
     font-size: 25px;
     display: flex;
     align-items:center;
@@ -65,11 +66,13 @@ footer{
 
 .redes_titulo{
     text-align: center;
+    background-color: rgba(242, 241, 242, 0.75);
 }
 
 .redes__icono{
     height: 40px;
     padding-top: 10px;
+    padding-inline: 20px;
 }
 
 .redes__lista{
@@ -192,6 +195,10 @@ li{
         flex-direction: row;
         justify-content: space-between;
     
+    }
+
+    footer{
+        padding-left: 0px;
     }
 
     .redes__icono{

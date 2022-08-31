@@ -1,0 +1,31 @@
+.contacto{
+    grid-area: principal;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(179, 230, 137, 0.741);
+}
+
+.contacto__titulo{
+    text-align: center;
+    text-decoration: underline double 3px;
+    font-size: 30px;
+}
+
+.contacto input{
+    border-radius: 5px;
+}
+
+.contacto_datos{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.contacto_datos > *{
+    display: block;
+    text-align: left;
+}
+
+.contacto input[type="submit"], .contacto input[type="reset"]{
+    padding: 5px;
+}

@@ -1,0 +1,20 @@
+.sobreNosotros{
+    grid-area: principal;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(179, 230, 137, 0.741);
+}
+
+
+
+.sobreNosotros__parrafo{
+    line-height: 40px;
+    text-align: justify;
+    margin: 10px;
+}
+
+.sobreNosotros__titulo{
+    text-align: center;
+    text-decoration: underline double 3px;
+    font-size: 20px;
+}

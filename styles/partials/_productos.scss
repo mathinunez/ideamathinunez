@@ -1,0 +1,34 @@
+.productos{
+    grid-area: principal;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30%;
+    padding-top: 10px;
+}
+
+.card{
+    border-radius: 20%;
+    text-align:center;
+    transition: transform .3s;
+    background-color: rgba(179, 230, 137, 0.741);
+}
+
+.card-text,.card-title{
+    text-align: center;
+}
+.card:hover{
+    transform: scale(1.2); 
+    z-index: 99;
+}
+
+.card-img-top{
+    height: auto;
+    width: 50%;
+    margin-top: 5px;
+}
+
+.col-md3,.col-sm-4{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

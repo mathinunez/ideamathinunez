@@ -1,0 +1,14 @@
+.home{
+    text-align: justify;
+    background-color: rgba(179, 230, 137, 0.741);
+}
+
+.carousel-item {
+    height: 70vh;
+    justify-items: center;
+    min-height: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }

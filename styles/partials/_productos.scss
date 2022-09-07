@@ -27,7 +27,7 @@
 
 
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
         z-index: 99;
     }
 }
@@ -40,3 +40,32 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+$productos:(
+    mates: #ecae1fac,
+    bombillas:  #47bee2ac,
+    yerberas: #1fa81aac,
+    termos:  #ecae1fac,
+    materas: #47bee2ac,
+    accesorios: #1fa81aac
+);
+
+@each $item, $color in $productos{
+    .carta-#{$item} {
+        background-color: $color;
+    }
+}
+
+.carta-mates{
+
+    &:hover{ 
+        background-color:  rgba(37, 33, 27, 0.862);
+        color: white;
+        border-radius: 30%;
+    }
+}
+
+.card {
+    @extend .carta-mates;
+}
+

@@ -1,14 +1,22 @@
-.comocurartuMate{
-    grid-area: principal;
+
+
+.video__titulo{
+    background-color: $mainColor;
+}
+
+@mixin flex($direction,$justify,$align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
     padding-top: 30px;
     height: 70vh;
     text-align: center;
     text-decoration: underline double 3px;
     font-size: 30px;
-    display: flex;
-    justify-content: space-evenly;
+    
 }
-
-.video__titulo{
-    background-color: $mainColor;
+.comocurartuMate{
+    @include flex(row, space-evenly, center);
+    grid-area: principal;
 }

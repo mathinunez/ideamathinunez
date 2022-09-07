@@ -20,9 +20,33 @@ nav  > div > .navbar-toggler{
 }
 
 .navbar{
-    background-color: rgba(179, 230, 137, 0.741);
+    background-color:$mainColor;
 }
 
 #barranav{
     width: auto;
+}
+
+$redes: (
+    facebook:rgba(36, 36, 234, 0.894),
+    instagram:rgba(217, 55, 198, 0.778),
+    tiktok:rgba(161, 77, 194, 0.894),
+    whatsapp:rgb(58, 195, 56),
+
+);
+
+.whatsapp:hover{
+    background-color: map-get($redes,whatsapp);
+}
+
+.tiktok:hover{
+    background-color: map-get($redes,tiktok);
+}
+
+.instagram:hover{
+    background-color: map-get($redes,instagram);
+}
+
+.facebook:hover{
+    background-color: map-get($redes,facebook);
 }

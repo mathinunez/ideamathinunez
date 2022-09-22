@@ -14,6 +14,27 @@ body{
     "redes";
 }
 
+header{
+    animation: titulo 4s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes titulo {
+
+
+  from {
+        color: rgba(57, 56, 56, 0.957);
+    }
+
+    to{
+        font-size: 100px;
+        color: white;
+    }
+}
+
 
 nav  > div > .navbar-toggler{
     margin: auto;

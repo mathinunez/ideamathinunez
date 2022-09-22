@@ -18,6 +18,38 @@ body {
   grid-template-areas: "head" "nav" "principal" "redes";
 }
 
+header {
+  -webkit-animation: titulo 4s;
+          animation: titulo 4s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes titulo {
+  from {
+    color: rgba(57, 56, 56, 0.957);
+  }
+  to {
+    font-size: 100px;
+    color: white;
+  }
+}
+
+@keyframes titulo {
+  from {
+    color: rgba(57, 56, 56, 0.957);
+  }
+  to {
+    font-size: 100px;
+    color: white;
+  }
+}
 nav > div > .navbar-toggler {
   margin: auto;
 }
@@ -60,12 +92,13 @@ header > h1 {
 }
 
 .home {
-  text-align: justify;
+  text-align: center;
+  font-size: x-large;
   background-color: rgba(238, 230, 211, 0.6745098039);
 }
 
 .carousel-item {
-  height: 70vh;
+  height: 80vh;
   justify-items: center;
   min-height: 300px;
   background-size: cover;
@@ -130,7 +163,7 @@ header > h1 {
 }
 
 .carta-mates:hover, .card:hover {
-  background-color: rgba(37, 33, 27, 0.862);
+  background: rgba(85, 83, 81, 0.899);
   color: white;
   border-radius: 30%;
 }
@@ -206,8 +239,9 @@ header > h1 {
 
 @media screen and (max-width: 480px) {
   .productos {
-    row-gap: 200px;
-    width: 100%;
+    width: auto;
+    margin: 100px;
+    row-gap: 50px;
   }
   footer {
     padding-left: 0px;
